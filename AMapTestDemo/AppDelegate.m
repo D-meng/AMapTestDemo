@@ -6,6 +6,9 @@
 //  Copyright © 2020 Dmeng. All rights reserved.
 //
 
+#import <AMapLocationKit/AMapLocationKit.h>
+#import <AMapFoundationKit/AMapFoundationKit.h>
+
 #import "AppDelegate.h"
 
 @interface AppDelegate ()
@@ -17,6 +20,8 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
+    [AMapServices sharedServices].enableHTTPS = YES;
+    [AMapServices sharedServices].apiKey = @"a445669bb3ae4144631697fa6cd69676";
     return YES;
 }
 

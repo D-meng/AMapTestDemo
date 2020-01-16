@@ -6,9 +6,12 @@
 //  Copyright © 2020 Dmeng. All rights reserved.
 //
 
+#import "MapView.h"
 #import "ViewController.h"
 
 @interface ViewController ()
+
+@property (nonatomic, strong) MapView *map;
 
 @end
 
@@ -16,7 +19,9 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view.
+    MapView *map = [[MapView alloc] initWithFrame: [UIScreen mainScreen].bounds];
+    self.map = map;
+    [self.view addSubview:map];
 }
 
 

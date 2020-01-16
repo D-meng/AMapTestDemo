@@ -3,10 +3,11 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		304FE428FCC4E60217B5BD03 /* Pods_AMapTestDemo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1D1E49626CBDEB7028EF61AC /* Pods_AMapTestDemo.framework */; };
 		741B07DE23D00FE5005A8BDC /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 741B07DD23D00FE5005A8BDC /* AppDelegate.m */; };
 		741B07E123D00FE5005A8BDC /* SceneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 741B07E023D00FE5005A8BDC /* SceneDelegate.m */; };
 		741B07E423D00FE5005A8BDC /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 741B07E323D00FE5005A8BDC /* ViewController.m */; };
@@ -16,6 +17,7 @@
 		741B07EF23D00FE8005A8BDC /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 741B07EE23D00FE8005A8BDC /* main.m */; };
 		741B07F923D00FE8005A8BDC /* AMapTestDemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 741B07F823D00FE8005A8BDC /* AMapTestDemoTests.m */; };
 		741B080423D00FE8005A8BDC /* AMapTestDemoUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 741B080323D00FE8005A8BDC /* AMapTestDemoUITests.m */; };
+		741B081F23D010E2005A8BDC /* MapView.m in Sources */ = {isa = PBXBuildFile; fileRef = 741B081A23D010E1005A8BDC /* MapView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +38,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		1D1E49626CBDEB7028EF61AC /* Pods_AMapTestDemo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AMapTestDemo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		741B07D923D00FE5005A8BDC /* AMapTestDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AMapTestDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		741B07DC23D00FE5005A8BDC /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		741B07DD23D00FE5005A8BDC /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -54,6 +57,10 @@
 		741B07FF23D00FE8005A8BDC /* AMapTestDemoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AMapTestDemoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		741B080323D00FE8005A8BDC /* AMapTestDemoUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AMapTestDemoUITests.m; sourceTree = "<group>"; };
 		741B080523D00FE8005A8BDC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		741B081723D010E1005A8BDC /* MapView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MapView.h; sourceTree = "<group>"; };
+		741B081A23D010E1005A8BDC /* MapView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MapView.m; sourceTree = "<group>"; };
+		99347E5CCE9EB5531AAC6F47 /* Pods-AMapTestDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AMapTestDemo.release.xcconfig"; path = "Target Support Files/Pods-AMapTestDemo/Pods-AMapTestDemo.release.xcconfig"; sourceTree = "<group>"; };
+		F960CF80FC3C5E80D7AF8231 /* Pods-AMapTestDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AMapTestDemo.debug.xcconfig"; path = "Target Support Files/Pods-AMapTestDemo/Pods-AMapTestDemo.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,6 +68,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				304FE428FCC4E60217B5BD03 /* Pods_AMapTestDemo.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -81,6 +89,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		144432DCCACA3F79E25708EF /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				1D1E49626CBDEB7028EF61AC /* Pods_AMapTestDemo.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		741B07D023D00FE5005A8BDC = {
 			isa = PBXGroup;
 			children = (
@@ -88,6 +104,8 @@
 				741B07F723D00FE8005A8BDC /* AMapTestDemoTests */,
 				741B080223D00FE8005A8BDC /* AMapTestDemoUITests */,
 				741B07DA23D00FE5005A8BDC /* Products */,
+				8EDA9DCFE86190CCA9682022 /* Pods */,
+				144432DCCACA3F79E25708EF /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -110,6 +128,8 @@
 				741B07E023D00FE5005A8BDC /* SceneDelegate.m */,
 				741B07E223D00FE5005A8BDC /* ViewController.h */,
 				741B07E323D00FE5005A8BDC /* ViewController.m */,
+				741B081723D010E1005A8BDC /* MapView.h */,
+				741B081A23D010E1005A8BDC /* MapView.m */,
 				741B07E523D00FE5005A8BDC /* Main.storyboard */,
 				741B07E823D00FE8005A8BDC /* Assets.xcassets */,
 				741B07EA23D00FE8005A8BDC /* LaunchScreen.storyboard */,
@@ -137,6 +157,15 @@
 			path = AMapTestDemoUITests;
 			sourceTree = "<group>";
 		};
+		8EDA9DCFE86190CCA9682022 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				F960CF80FC3C5E80D7AF8231 /* Pods-AMapTestDemo.debug.xcconfig */,
+				99347E5CCE9EB5531AAC6F47 /* Pods-AMapTestDemo.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -144,9 +173,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 741B080823D00FE8005A8BDC /* Build configuration list for PBXNativeTarget "AMapTestDemo" */;
 			buildPhases = (
+				B247E777FEDE3C5C30303074 /* [CP] Check Pods Manifest.lock */,
 				741B07D523D00FE5005A8BDC /* Sources */,
 				741B07D623D00FE5005A8BDC /* Frameworks */,
 				741B07D723D00FE5005A8BDC /* Resources */,
+				A88695616CDAEF2B9F809520 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -262,6 +293,48 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		A88695616CDAEF2B9F809520 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-AMapTestDemo/Pods-AMapTestDemo-resources-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-AMapTestDemo/Pods-AMapTestDemo-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-AMapTestDemo/Pods-AMapTestDemo-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B247E777FEDE3C5C30303074 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-AMapTestDemo-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		741B07D523D00FE5005A8BDC /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -271,6 +344,7 @@
 				741B07DE23D00FE5005A8BDC /* AppDelegate.m in Sources */,
 				741B07EF23D00FE8005A8BDC /* main.m in Sources */,
 				741B07E123D00FE5005A8BDC /* SceneDelegate.m in Sources */,
+				741B081F23D010E2005A8BDC /* MapView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -437,34 +511,40 @@
 		};
 		741B080923D00FE8005A8BDC /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F960CF80FC3C5E80D7AF8231 /* Pods-AMapTestDemo.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 78A9JGZACE;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = HY25JE8N4B;
 				INFOPLIST_FILE = AMapTestDemo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.Dmeng.AMapTestDemo;
+				PRODUCT_BUNDLE_IDENTIFIER = com.GoSki.GoSkiing;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = goski_dev;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
 		};
 		741B080A23D00FE8005A8BDC /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 99347E5CCE9EB5531AAC6F47 /* Pods-AMapTestDemo.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 78A9JGZACE;
+				CODE_SIGN_IDENTITY = "iPhone Distribution";
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = HY25JE8N4B;
 				INFOPLIST_FILE = AMapTestDemo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.Dmeng.AMapTestDemo;
+				PRODUCT_BUNDLE_IDENTIFIER = com.GoSki.GoSkiing;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = GoSki_AD;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
